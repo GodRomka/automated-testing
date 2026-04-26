@@ -13,5 +13,12 @@
   },
   "dependencies": {
     "axios": "^1.15.2"
+  },
+  "scripts": {
+    "test:unit": "jest lab7/unit",
+    "test:api": "jest lab7/api",
+    "test:ui": "cypress run --spec cypress/e2e/lab7/ui/ui.cy.js",
+    "test:e2e": "cypress run --spec cypress/e2e/lab7/e2e/e2e.cy.js",
+    "test:all": "npm run test:unit && npm run test:api && npm run test:ui && npm run test:e2e"
   }
 }
