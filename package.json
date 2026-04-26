@@ -8,6 +8,7 @@
   },
   "private": true,
   "devDependencies": {
+    "cypress": "^15.14.1",
     "jest": "^30.3.0"
   },
   "dependencies": {
