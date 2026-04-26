@@ -4,21 +4,15 @@
   "description": "",
   "main": "lab1/index.js",
   "scripts": {
-    "test": "jest"
+    "test:lab8": "npx cypress run --spec cypress/e2e/lab8/cypress.cy.js && npx testcafe chrome lab8/testcafe.test.js && npx playwright test lab8/playwright.test.js"
   },
   "private": true,
   "devDependencies": {
+    "@playwright/test": "^1.59.1",
     "cypress": "^15.14.1",
     "jest": "^30.3.0"
   },
   "dependencies": {
     "axios": "^1.15.2"
-  },
-  "scripts": {
-    "test:unit": "jest lab7/unit",
-    "test:api": "jest lab7/api",
-    "test:ui": "cypress run --spec cypress/e2e/lab7/ui/ui.cy.js",
-    "test:e2e": "cypress run --spec cypress/e2e/lab7/e2e/e2e.cy.js",
-    "test:all": "npm run test:unit && npm run test:api && npm run test:ui && npm run test:e2e"
   }
 }
